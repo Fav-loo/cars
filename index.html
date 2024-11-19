@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="materialize/css/materialize.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: white;">
+    <div id="content-placeholder" style="width: 100%; position: absolute; z-index: 9999; position: fixed;">
+        <div class="preloader" style="text-align: center; height: 100vh;background-color: white;">
+        </div>
+    </div>
+    <nav class="white">
+        <ul class="left">
+            <img src="image/WORK1.jpg" style="width: 70px;" alt="">
+        </ul>
+        <div class="right">
+            <ul class="hide-on-small-only">
+                <li><a href="" class="black-text">Home</a></li>
+                <li><a href="" class="black-text">About us</a></li>
+                <li><a href="" class="black-text">gallery</a></li>
+                <li><a href="" class="black-text">Our services</a></li>
+            </ul>
+            <ul id="slide-out" class="sidenav">
+                <li>
+                    <div class="user-view">
+                        <div class="background">
+                            <img src="image/pexels-mikebirdy-977003.jpg" alt="">
+                        </div>
+                        <a href="#user"><img src="image/WORK1.jpg" alt="" class="circle"></a>
+                        <a href="#name"><span class="white-text name">Favour</span></a>
+                        <a href="#email"><span class="white-text email">okufavour@gmail.com</span></a>
+                    </div>
+                
+                </li>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">gallery</a></li>
+                <li><a href="">Our services</a></li>
+            </ul>
+            <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        </div>
+    </nav>
+    <div class="slider">
+        <ul class="slides">
+            <li>
+                <img src="image/pexels-jessef11-1213294.jpg" alt="">
+            </li>
+            <li>
+                <img src="image/pexels-mikebirdy-1335077.jpg" alt="">
+            </li>
+            <li>
+                <img src="image/pexels-mikebirdy-977003.jpg" alt="">
+            </li>
+            <li>
+                <img src="image/pexels-vladalex94-1402787.jpg" alt="">
+            </li>
+            <li>
+                <img src="image/pexels-wardmediauk-3647693.jpg" alt="">
+            </li>
+        </ul>
+    </div>
+    <div class="row">
+        <div class="col l4 m4 s12">
+            <div class="card" style="padding: 3%;background-color: rgb(186, 194, 188);">
+                <div class="card-image">
+                    <img src="image/pexels-mikebirdy-1335077.jpg" alt="">
+                    <p>buy your car</p>
+                </div>
+                <div class="card-content">
+                    <span style="text-align: center;">MERCEDIES AMG COUPE</span>
+                </div>
+            </div>
+        </div>
+        <div class="col l4 m4 s12">
+            <div class="card" style="padding: 3%;background-color: rgb(186, 194, 188);">
+                <div class="card-image">
+                    <img src="image/pexels-mikebirdy-977003.jpg" alt="">
+                </div>
+                <div class="card-content">
+                    <span style="text-align: center;">ASTON MARTIN</span>
+                </div>
+            </div>
+        </div>
+        <div class="col l4 m4 s12">
+            <div class="card" style="padding: 3%;background-color: rgb(186, 194, 188);">
+                <div class="card-image">
+                    <img src="image/pexels-vladalex94-1402787.jpg" alt="">
+                </div>
+                <div class="card-content">
+                    <span style="text-align: center;">AUDI SALON</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col l12 m12 s12">
+            <img src="image/pexels-wardmediauk-3647693.jpg" style="width: 100%;" alt="">
+        </div>
+    </div>
+    <div class="white">
+    <div class="container">
+        <span><a href="https://twitter.com/FAV_LOO"><i class="fa fa-twitter" aria-hidden="true"></i></a></span>
+        <span><a href="https://instagram.com/fav_loo"><i class="fa fa-instagram" aria-hidden="true"></i></a></span>
+        <span><a href="https://wa.me/+2348081562526"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></span>
+    </div>
+</div>
+                <script src="materialize/js/jquery.js"></script>
+                <script src="materialize/js/materialize.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('.slider').slider();
+        });
+    </script>
+    <script>
+        window.addEventListener('load',function(){
+            setTimeout(function(){document.querySelector('.preloader').style.display='none';
+            document.getElementById('content-placeholder').style.display='block';
+            },2000)
+        })
+    </script>
+      <script>
+        $(document).ready(function(){
+            $('.sidenav').sidenav();
+        });
+    </script>
+</body>
+</html>
